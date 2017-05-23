@@ -68,10 +68,11 @@ You can find the subject in the directory `subjects/` on this repository.
  
 ## Prototypes of those functions
 
-```
-void				*ft_memset(void *b, int c, size_t len);
-void				ft_bzero(void *s, size_t n);
-void				*ft_memcpy(void *dest, void const *src, size_t n);
+| Prototype | Usage |
+|-----------|-------|
+|void				*ft_memset(void *b, int c, size_t len);||
+|void				ft_bzero(void *s, size_t n);||
+|void				*ft_memcpy(void *dest, void const *src, size_t n);||
 void				*ft_memccpy(void *dest, void const *src, int c, size_t n);
 void				*ft_memmove(void *dest, void const *src, size_t len);
 void				*ft_memchr(void const *s, int c, size_t n);
@@ -143,4 +144,3 @@ int				ft_atoi2(char const *str);
 char				*ft_str_initialized(size_t size, char c);
 void				*ft_lstfold(t_list **alst, void *neutral,
 void *(*f)(void *content1, void *content2));
-```
