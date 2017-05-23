@@ -82,4 +82,4 @@ You can find the subject in the directory `subjects/` on this repository.
 |```size_t				ft_strlcpy(char *dest, char const *src, size_t size);```||
 |```int				ft_atoi2(char const *str);```||
 |```char				*ft_str_initialized(size_t size, char c);```||
-|```void				*ft_lstfold(t_list **alst, void *neutral,<br>void *(*f)(void *content1, void *content2));```||
+|```void				*ft_lstfold(t_list **alst, void *neutral,```<br>```void *(*f)(void *content1, void *content2));```||
