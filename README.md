@@ -70,7 +70,7 @@ You can find the subject in the directory `subjects/` on this repository.
 
 | Prototype | Usage |
 |-----------|-------|
-|void				*ft_memset(void *b, int c, size_t len);||
+|```void				*ft_memset(void *b, int c, size_t len);```||
 |void				ft_bzero(void *s, size_t n);||
 |void				*ft_memcpy(void *dest, void const *src, size_t n);||
 void				*ft_memccpy(void *dest, void const *src, int c, size_t n);
