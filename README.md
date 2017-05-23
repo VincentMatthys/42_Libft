@@ -83,4 +83,4 @@ You can find the subject in the directory `subjects/` on this repository.
 |```int				ft_atoi2(char const *str);```||
 |```char				*ft_str_initialized(size_t size, char c);```||
 |```void				*ft_lstfold(t_list **alst, void *neutral,```
-<br>          ```void *(*f)(void *content1, void *content2));```||
+```void *(*f)(void *content1, void *content2));```||
