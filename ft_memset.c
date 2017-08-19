@@ -6,7 +6,7 @@
 /*   By: vmatthys <vmatthys@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/16 21:36:24 by vmatthys          #+#    #+#             */
-/*   Updated: 2017/08/19 14:22:49 by vmatthys         ###   ########.fr       */
+/*   Updated: 2017/08/19 16:23:15 by vmatthys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static unsigned long long	enhance_c(unsigned char lsb_c,
 ** @@ First, Data structure alignment : we have to align cpy_b to a multiple of
 ** sizeof(big_c)
 ** @@ Second, until len is more than 8 bytes, copy
-** @ Else, do the obvious job until len == 0
+** @ Else, do the obvious job until len = 0
 ** --------------------------------- APPARTE -----------------------------------
 ** When aligning data structures, is modullo (%) better than bytes comparaison ?
 ** (unsigned long long)cpy_b & (step - 1) == data structure alignment
