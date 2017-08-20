@@ -6,7 +6,7 @@
 /*   By: vmatthys <vmatthys@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/16 21:36:24 by vmatthys          #+#    #+#             */
-/*   Updated: 2017/08/19 16:23:15 by vmatthys         ###   ########.fr       */
+/*   Updated: 2017/08/20 16:43:19 by vmatthys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static unsigned long long	enhance_c(unsigned char lsb_c,
 	big_c = lsb_c & 0xff;
 	big_c = (big_c << 8) | big_c;
 	big_c = (big_c << 16) | big_c;
-	big_c = (big_c << 32) | big_c;
+	big_c = ((big_c << 16) << 16) | big_c;
 	*big_b = (unsigned long long *)cpy_b;
 	return (big_c);
 }
