@@ -6,7 +6,7 @@
 /*   By: vmatthys <vmatthys@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/11 15:48:51 by vmatthys          #+#    #+#             */
-/*   Updated: 2016/12/06 23:12:33 by vmatthys         ###   ########.fr       */
+/*   Updated: 2017/09/06 00:08:05 by vmatthys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
-# include <stdio.h>
+
+union				u_str_union
+{
+	char			*str;
+	char const		*const_str;
+};
 
 typedef struct		s_list
 {
