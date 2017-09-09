@@ -6,7 +6,7 @@
 /*   By: vmatthys <vmatthys@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 17:19:49 by vmatthys          #+#    #+#             */
-/*   Updated: 2017/08/19 16:23:11 by vmatthys         ###   ########.fr       */
+/*   Updated: 2017/09/09 19:58:25 by vmatthys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void		*ft_memcpy(void *dest, void const *src, size_t n)
 		step = sizeof(unsigned long long int);
 		if (!((unsigned long long)dest & (step - 1))
 			&& !((unsigned long long)s & (step - 1))
-			&& !(n & (step - 1 )))
+			&& !(n & (step - 1)))
 		{
 			while (n)
 			{

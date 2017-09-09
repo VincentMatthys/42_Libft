@@ -6,7 +6,7 @@
 /*   By: vmatthys <vmatthys@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/03 22:05:27 by vmatthys          #+#    #+#             */
-/*   Updated: 2017/09/09 19:51:40 by vmatthys         ###   ########.fr       */
+/*   Updated: 2017/09/09 19:57:52 by vmatthys         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,10 +97,8 @@ size_t				ft_strlen(char const *s)
 	step = sizeof(unsigned long long);
 	cpy_s.const_str = s;
 	while ((unsigned long long)cpy_s.str & (step - 1))
-	{
-			if (!(*(cpy_s.str)++))
-				return (size_t)(cpy_s.str - s - 1);
-	}
+		if (!(*(cpy_s.str)++))
+			return (size_t)(cpy_s.str - s - 1);
 	big_s = (unsigned long long*)(void *)cpy_s.str;
 	if (step > 4)
 	{
